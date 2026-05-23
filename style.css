@@ -282,7 +282,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;          
+    z-index: 1;         
     pointer-events: none; 
     opacity: 0.6;        
     
@@ -292,14 +292,14 @@ body {
         url('images/revithi.png');
         
     background-position: 
-        top 100px right 10px,   /* Ελιά */
+        top 320px right 10px,   /* Ελιά */
         bottom 0px left 0px,   /* Τραπέζι */
-        right 100px top 65%;      /* Ρεβύθι */
+        right 90px top 65%;      /* Ρεβύθι */
         
     background-repeat: no-repeat;
     
     background-size: 
         300px auto,  /* Μέγεθος για την ελιά */
-        190px auto,  /* Μέγεθος για το τραπέζι */
-        150px auto;   /* Μέγεθος για το ρεβύθι */
+        160px auto,  /* Μέγεθος για το τραπέζι */
+        130px auto;   /* Μέγεθος για το ρεβύθι */
 }
