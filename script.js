@@ -1,4 +1,3 @@
-// Βάλε το δικό σου CSV link ανάμεσα στα εισαγωγικά
 const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vROmuZN2U6pcqmpyl4_HLQXnY5Ls2kAatS6gUeQwNq58EmyrhJV_J2YeVxAIlak_WPkYCfXF0JM4nsO/pub?output=csv";
 let menuData = [];
 let currentLang = 'GR'; // Default
@@ -21,7 +20,7 @@ function fetchMenuData() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // ΑΥΤΟΜΑΤΗ ΑΝΙΧΝΕΥΣΗ ΓΛΩΣΣΑΣ ΑΠΟ ΤΟΝ BROWSER
+    // Ανίχνευση γλώσσας
     const userLang = navigator.language || navigator.userLanguage;
     currentLang = userLang.startsWith('el') ? 'GR' : 'EN';
 
@@ -150,7 +149,7 @@ function renderMenu() {
                 const soldOutClass = isSoldOut ? 'sold-out' : '';
                 let badgeHTML = isSoldOut ? `<span class="unavailable-badge">${badgeText}</span>` : '';
                 
-                // Πορτοκαλί Pill για το Λιβάδι -> Τώρα έγινε Λαδί
+                // Πορτοκαλί Pill για το Λιβάδι 
                 const isLivadi = item.Name_GR && item.Name_GR.toUpperCase().includes("ΤΟ ΛΙΒΑΔΙ");
                 if (isLivadi && !isSoldOut) {
                     const livadiText = currentLang === 'GR' ? 'Special!' : 'House Special!';
