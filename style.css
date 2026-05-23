@@ -284,7 +284,8 @@ body {
     height: 100%;
     z-index: 1;          
     pointer-events: none; 
-    opacity: 0.15; 
+    
+    opacity: 0.35; 
     
     background-image: 
         url('images/elia.png'), 
@@ -292,14 +293,14 @@ body {
         url('images/revithi.png');
         
     background-position: 
-        right 5% top 15%,     /* Ελιά: Πάντα 15% κάτω από την κορυφή */
-        left 5% bottom 5%,    /* Τραπέζι: Πάντα 5% πάνω από τον πάτο */
-        right 8% top 65%;     /* Ρεβύθι: Πάντα στο 65% της οθόνης */
+        right -20px top 8%,      /* Ελιά: Πάνω δεξιά */
+        left -20px bottom 2%,    /* Τραπέζι: Κάτω αριστερά */
+        right -10px top 60%;     /* Ρεβύθι: Μέση δεξιά */
         
     background-repeat: no-repeat;
     
     background-size: 
-        max(100px, 15vw) auto,  /* Ελιά: Θα μικρύνει μέχρι τα 100px στα κινητά */
-        max(110px, 18vw) auto,  /* Τραπέζι: Θα μικρύνει μέχρι τα 110px στα κινητά */
-        max(70px, 10vw) auto;   /* Ρεβύθι: Θα μικρύνει μέχρι τα 70px στα κινητά */
+        clamp(180px, 35vw, 300px) auto,  /* Ελιά: Ξεκινάει από 180px στο κινητό */
+        clamp(200px, 45vw, 350px) auto,  /* Τραπέζι: Ξεκινάει από 200px στο κινητό */
+        clamp(120px, 20vw, 200px) auto;  /* Ρεβύθι: Ξεκινάει από 120px στο κινητό */
 }
