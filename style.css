@@ -1,8 +1,8 @@
 /* Βασικές Ρυθμίσεις Παλέτας */
 :root {
-    --primary: #2c302e;       /* Σκούρο ανθρακί για πολύ καθαρό κείμενο */
-    --bg-color: #f5f2eb;      /* Premium Μπεζ (Beige) για όλο το background */
-    --accent: #606c38;        /* Αυθεντικό Λαδί (Olive Green) για όλα τα highlights */
+    --primary: #2c302e;       /* Σκούρο ανθρακί  */
+    --bg-color: #f5f2eb;      /* Beige για background */
+    --accent: #606c38;        /* Λαδί για τα highlights */
     --grey: #707571;          /* Αχνό γκρι-πράσινο για τις περιγραφές */
 }
 
@@ -13,18 +13,16 @@ body {
     color: var(--primary);
 }
 
-/* 1. Header (Banner & Logo) */
+/* Header (Banner & Logo) */
 .header-container {
     position: relative;
     padding-bottom: 20px;
     z-index: 10;
 }
 
-/* ΕΔΩ ΜΠΑΙΝΕΙ Η ΑΧΝΗ ΕΙΚΟΝΑ BACKGROUND */
 .banner {
     width: 100%;
     height: 200px;
-    /* Το linear-gradient βάζει ένα μπεζ "πέπλο" 50% πάνω από την εικόνα για να φαίνεται αχνή */
     background-image: linear-gradient(rgba(245, 242, 235, 0.5), rgba(245, 242, 235, 0.5)), url('images/banner.jpg'); 
     background-size: cover;
     background-position: center;
@@ -32,19 +30,19 @@ body {
 
 .logo {
     position: absolute;
-    bottom: 80px; /* Προσαρμόστηκε για να ταιριάζει με το νέο μέγεθος */
+    bottom: 80px; 
     left: 20px;
-    width: 120px; /* Αυξήθηκε από 90px */
-    height: 120px; /* Αυξήθηκε από 90px */
+    width: 120px; 
+    height: 120px; 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    background-image: url('images/Logo.png'); /* Ενημερώθηκε το placeholder για το νέο μέγεθος */
+    background-image: url('images/Logo.png'); 
     background-size: cover;
     border: 2px solid #fff;
 }
 
-/* 2. Κουμπιά (Τηλέφωνο, Χάρτες, Γλώσσα) */
+/* Κουμπιά (Τηλέφωνο, Χάρτες, Γλώσσα) */
 .action-buttons {
     display: flex;
     justify-content: flex-end;
@@ -67,7 +65,6 @@ body {
     transition: all 0.2s;
 }
 
-/* Τα icons παίρνουν το λαδί χρώμα */
 .btn i {
     color: var(--accent);
     font-size: 14px;
@@ -77,11 +74,11 @@ body {
     background-color: #eae5da;
 }
 
-/* 3. Sticky Μπάρα Κατηγοριών */
+/* Sticky Μπάρα Κατηγοριών */
 .sticky-nav {
     position: sticky;
     top: 0;
-    background-color: rgba(245, 242, 235, 0.98); /* Μπεζ με ελαφριά διαφάνεια στο scroll */
+    background-color: rgba(245, 242, 235, 0.98); 
     backdrop-filter: blur(8px);
     padding: 15px 15px;
     display: flex;
@@ -116,11 +113,11 @@ body {
     font-weight: 700;
 }
 
-/* 4. Το περιεχόμενο του Μενού */
+/* Το περιεχόμενο του Μενού */
 .menu-content,
 #menu-container {
     position: relative;
-    z-index: 10; /* Επίπεδο 10 */
+    z-index: 10; 
     padding: 20px;
 }
 
@@ -166,7 +163,6 @@ body {
     color: var(--primary);
 }
 
-/* Οι τιμές παίρνουν το λαδί χρώμα */
 .item-price {
     font-weight: 700;
     color: var(--accent);
@@ -181,7 +177,7 @@ body {
     line-height: 1.4;
 }
 
-/* Διπλές Τιμές (Καλαμάκι / Τυλιχτό) σε λαδί αποχρώσεις */
+/* Διπλές Τιμές (Καλαμάκι / Τυλιχτό) */
 .dual-price {
     display: flex;
     flex-direction: column;
@@ -215,12 +211,12 @@ body {
     text-decoration: line-through;
 }
 
-/* Ταμπελάκια (Badges / Pills) - ΟΛΑ ΣΕ ΛΑΔΙ ΑΠΟΧΡΩΣΗ */
+/* Ταμπελάκια (Badges / Pills)  */
 .unavailable-badge {
     display: inline-block;
     font-size: 11px;
-    background-color: #f0f2eb; /* Απαλό λαδί φόντο */
-    color: var(--accent);       /* Λαδί γράμματα */
+    background-color: #f0f2eb; 
+    color: var(--accent);       
     padding: 2px 8px;
     border-radius: 12px;
     font-weight: 600;
@@ -230,7 +226,7 @@ body {
 }
 
 .pill-sunday {
-    background-color: var(--accent); /* Λαδί */
+    background-color: var(--accent); 
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -241,7 +237,7 @@ body {
 }
 
 .pill-special {
-    background-color: var(--accent); /* Λαδί αντί για πορτοκαλί */
+    background-color: var(--accent); 
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -254,10 +250,10 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Το ειδικό πλαίσιο για τη Ρεβυθάδα προσαρμοσμένο στην παλέτα */
+/* Το ειδικό πλαίσιο για τη Ρεβυθάδα */
 .special-box {
     background: linear-gradient(135deg, #ffffff 0%, #f9f8f5 100%);
-    border: 2px dashed var(--accent); /* Λαδί διακεκομμένη γραμμή */
+    border: 2px dashed var(--accent); 
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -265,7 +261,7 @@ body {
 }
 
 .giagia-text {
-    color: var(--accent); /* Λαδί */
+    color: var(--accent); 
     font-weight: 800;
     font-size: 14px;
     margin-bottom: 8px;
@@ -279,32 +275,29 @@ body {
     font-size: 19px;
 }
 
-/* --- ΦΟΝΤΟ ΜΕ ΑΧΝΕΣ ΕΙΚΟΝΕΣ (WATERMARKS) --- */
+/* WATERMARKS) */
 .bg-watermarks {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;          /* Το σπρώχνει πίσω από όλο το περιεχόμενο */
-    pointer-events: none; /* Δεν εμποδίζει τα κλικ του χρήστη στην οθόνη */
-    opacity: 0.6;        /* Ρυθμίζει πόσο αχνές θα είναι (0.05 έως 0.10 είναι το ιδανικό) */
+    z-index: 1;          
+    pointer-events: none; 
+    opacity: 0.6;        
     
-    /* Φορτώνουμε και τις 3 εικόνες με τη σειρά */
     background-image: 
         url('images/elia.png'), 
         url('images/trapezi.png'), 
         url('images/revithi.png');
         
-    /* Ορίζουμε τη θέση για την κάθε μία (με την ίδια σειρά) */
     background-position: 
-        top 310px right 10px,   /* Ελιά: Πάνω δεξιά (κάτω από το banner) */
-        bottom 0px left 0px,   /* Τραπέζι: Κάτω αριστερά */
-        right 100px top 65%;      /* Ρεβύθι: Κάπου στη μέση δεξιά */
+        top 310px right 10px,   /* Ελιά */
+        bottom 0px left 0px,   /* Τραπέζι */
+        right 100px top 65%;      /* Ρεβύθι */
         
     background-repeat: no-repeat;
     
-    /* Ορίζουμε το μέγεθος (πλάτος) για την κάθε μία σε pixel */
     background-size: 
         300px auto,  /* Μέγεθος για την ελιά */
         190px auto,  /* Μέγεθος για το τραπέζι */
