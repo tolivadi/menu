@@ -1,7 +1,7 @@
 /* Βασικές Ρυθμίσεις Παλέτας */
 :root {
     --primary: #2c302e;       /* Σκούρο ανθρακί  */
-    --bg-color: #f3eddf;      /* Beige για background */
+    --bg-color: #F5F2EB;      /* Beige για background */
     --accent: #606c38;        /* Λαδί για τα highlights */
     --grey: #707571;          /* Αχνό γκρι-πράσινο για τις περιγραφές */
 }
