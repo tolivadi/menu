@@ -251,29 +251,14 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Το ειδικό πλαίσιο για τη Ρεβυθάδα */
-.special-box {
-    background: linear-gradient(135deg, #ffffff 0%, #f9f8f5 100%);
-    border: 2px dashed var(--accent); 
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.giagia-text {
-    color: var(--accent); 
-    font-weight: 800;
-    font-size: 14px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    text-transform: uppercase;
-}
-
-.special-box .item-name {
-    font-size: 19px;
+/* Υπότιτλος για τα Πιάτα ημέρας */
+.category-subtitle {
+    font-size: 16px;
+    color: var(--accent);
+    margin-top: -15px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    opacity: 0.9;
 }
 
 /* WATERMARKS) */
